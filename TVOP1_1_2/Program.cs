@@ -11,11 +11,22 @@ namespace TVOP1_1_2
             while (true)
             {
                 Console.Clear();
-                People.Show();
-                Console.WriteLine("\n");
-                People.ShowMinAge();
-                People.ShowMaxAge();
-                People.ShowAvgAge();
+
+                if(People.Count > 0)
+                {
+                    Console.WriteLine(string.Format("{0} {1} {2}", "Имя", "Фамилия", "Возраст"));
+                    foreach (var men in People.GetPeople())
+                    {
+                        Console.WriteLine(string.Format("{0} {1} {2}", men.Name, men.Surname, men.Age));
+                    }
+                    Console.WriteLine("\n");
+   
+                    Console.WriteLine("Минимальный возраст: " + People.MinAge);
+                    Console.WriteLine("Максимальный возраст: " + People.MaxAge);
+                    Console.WriteLine("Средний возраст: "+People.AvgAge);
+                }
+
+                
                 Console.WriteLine("\n");
                 Console.Write("Введите имя: ");
                 string name = Console.ReadLine();
