@@ -3,9 +3,9 @@ using System.Net;
 
 namespace TVOP1_6
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string link = args[0];
             string path = args[1];
