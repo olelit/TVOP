@@ -2,8 +2,11 @@
 
 namespace TVOP1_3
 {
-    class Program
+    internal class Program
     {
+
+        internal static int Square(int a, int b) => a * b;
+
         static void Main(string[] args)
         {
             int a = 0;
@@ -19,7 +22,7 @@ namespace TVOP1_3
                 ErrorMessage();
             }
 
-            int s = a * b;
+            int s = Square(a, b);
             Console.WriteLine("Площадь прямоугольника: "+s.ToString());
         }
 

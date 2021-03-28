@@ -4,9 +4,9 @@ using System.IO;
 
 namespace TVOP1_4
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        internal static void Main(string[] args)
         {
             List<string> lines = new List<string>();
             lines.Add("<table cellspacing='0'>");
